@@ -1,61 +1,60 @@
 ---
-title: Common Issues
-description: Common issues found in SideStore.
+титул: Частые проблемы
+описание: Частые проблемы найденные в SideStore.
 ---
 
-:::warning
+:::ПРЕДУПРЕЖДЕНИЕ
 
-This page is currently a work in progress. The information provided should be accurate, but please refer to our [Discord server](https://discord.com/invite/sidestore) for assistance if needed.
-
+В текущем времени это страница еще разрабатывается. Ниже приведенная информация должна быть корректной, но лучше обращаться к нашему [Дискорд серверу] (https://discord.com/invite/sidestore) для помощи если понадобится.
 :::
 
-## Common Issues with SideStore
+## Частые ошибки с SideStore
 
 ### AFC Connection Failure
-#### Cause
-Connection issues or an invalid pairing file.
-#### Resolution
-1. Attempt to reconnect
-2. Generate a new pairing file using JitterbugPair and import it via the settings menu. See our [Pairing File instructions](/docs/installation/pairing-file) for details.
+#### Причины возникновения
+Проблемы с подключением или неправильно-привязанный pairing файл.
+#### Решение
+1. Попробуйте переподключиться.
+2. Сгенирируйте новый файл сопряжения (pairing file) используя JitterbugPair и вставьте его через меню с настройками. Посмотрите нашу [инструкции с файлом сопряжения](/docs/installation/pairing-file) для более подробных деталей.
 
-### No WiFi or VPN Connection
-#### Cause
-Connection issues with the minimuxer service.
-#### Resolution
-1. If using WireGuard, switch to StosVPN
-2. Try again (spamming the button usually helps)
-3. Restart SideStore
-4. Restart StosVPN
-5. Generate a new pairing file using JitterbugPair and import it via the settings menu. See our [Pairing File instructions](/docs/installation/pairing-file) for details.
+### No WiFi or VPN Connection (Нет подключения к WiFi или VPN-у)
+#### Причина возникновения
+Проблема с подключением к сервису minimuxer.
+#### Решение
+1. Если используете WireGuard как прокси, перейдите на StosVPN.
+2. Попробуйте снова (спамить на кнопку обычно помогает) 
+3. Перезапустите SideStore
+4. Перезапустите StosVPN
+5. Сгенирируйте новый файл сопряжения (pairing file) используя JitterbugPair и вставьте его через меню с настройками. Посмотрите нашу [инструкции с файлом сопряжения](/docs/installation/pairing-file) для более подробных деталей.
 
-### Sidestore Hangs Halfway Through Installation
-#### Cause
-Cache issues.
-#### Resolution
-1. Restart SideStore
-2. Clear Cache
-3. Change Anisette Server
-4. Reset adi.pb
-5. Sign out from SideStore and sign back in
-6. Use WireGuard
-7. Restart device
-8. Regenerate pairing file
-9. Reinstall SideStore
+### Sidestore сбрасывается на половине установки
+#### Причина возникновения
+Проблемы с кешом.
+#### Решение
+1. Перезапустите SideStore
+2. Очистите кеш
+3. Поменяйте сервер Anisette
+4. Сбросьте adi.pb
+5. Выйдите из SideStore и зайдите обратно
+6. Попробуйте используйте WireGuard
+7. Перезапустите устройство.Restart device
+8. Сгенирируйте другой файл сопряжения (pairing file)
+9. Переустановите SideStore
 
-### Unable to Launch SideStore
-#### Cause
-Multiple possible causes.
-#### Resolution
-1. Make sure you installed SideStore through Altserver.
-2. Reinstall SideStore
+### Не получается запустить SideStore
+#### Причина возникновения
+Много возможных причин.
+#### Решение
+1. Убедитесь что вы установили SideStore через Altserver.
+2. Переустановите SideStore
 
-If the above doesnt work, do the following:
+Если решения сверху не работают, сделайте следующее:
 
-1. Delete SideStore and all apps that you have installed from SideStore.
-2. Reinstall SideStore.
-3. Select pairing file and login. (It will give you a promt to refresh SideStore, select no)
-4. Install the Sidestore.ipa file to your device.
-5. Import the Sidestore.ipa file into Sidestore like how you would install any other app.
-6. This will allow Sidestore to do a clean refresh, and hopefully fix the issue.
+1. Удалите Sidestore и все приложения которые вы установили с помощью SideStore.
+2. Переустановите SideStore (да, опять).
+3. Выберите файл сопряжения и войдите. (Вылезет промт чтобы обновить SideStore, выберете "нет")
+4. Загрузите файл Sidestore.ipa на ваше устройство.
+5. Импортируйте файл SideStore.ipa в SideStore также, как вы бы скачивали любое другое приложение.
+6. Это разрешит SideStore сделать чистое обновление, и, надеюсь, исправит проблему.
 
 
